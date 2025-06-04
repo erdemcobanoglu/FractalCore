@@ -1,0 +1,6 @@
+@FractalCore.Orchestrator_HostAddress = http://localhost:5239
+
+GET {{FractalCore.Orchestrator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

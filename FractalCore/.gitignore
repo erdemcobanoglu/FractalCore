@@ -1,0 +1,27 @@
+# Build Folders
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE-specific files
+.vs/
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Publish output
+publish/

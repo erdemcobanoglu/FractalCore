@@ -1,14 +1,18 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Runtime.Versioning;
 
-namespace FractalCore.Orchestrator
+namespace FractalCore.Orchestrator.Services
 {
     public static class ImageSegmenter
     {
         /// <summary>
-        /// Verilen görüntüyü dikey olarak parçalara ayırır (örneğin 10 dikey şerit).
+        /// Splits the given image into vertical segments.
         /// </summary>
+        [SupportedOSPlatform("windows")]
         public static List<byte[]> SplitImage(string imagePath, int numberOfSegments)
         {
             var segments = new List<byte[]>();
